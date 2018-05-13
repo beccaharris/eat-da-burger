@@ -13,7 +13,6 @@ function printQuestionMarks(num) {
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
   var arr = [];
-  // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
     var value = ob[key];
     arr.push(key + '=' + value);
@@ -43,8 +42,6 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ') ';
 
-    console.log(queryString);
-
     connection.query(queryString, vals, function(err, result) {
       if (err) {
         throw err;
@@ -61,7 +58,6 @@ var orm = {
     queryString += ' WHERE ';
     queryString += condition;
 
-    console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
