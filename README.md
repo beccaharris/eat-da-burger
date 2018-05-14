@@ -1,12 +1,3 @@
-# eat-da-burger
-***
-NPM install mysql
-NPM install express
-NPM install express-handlebars
-NPM install body-parser
-NPM install method-override
-***
-
 # Eat-Da-Burger
 This app allows users to list and keep track of burgers they want to eat and have already eaten.<br>
 Check it out on <a href="https://bharris-eat-da-burger.herokuapp.com/">Heroku</a>
